@@ -44,7 +44,9 @@ const sortNumbersBetter = ([...arr], isDescending) => {
   }
   return arr.sort((a,b) => a-b)
 };
-
+/** FEEDBACK: For this one, you should create a copy of arr rather than using the rest parameter in the parameter!
+ * After making a copy, you can sort directly on the copy!
+ */
 const sortUsersByOrder = (...arr) => {
   const newArr = []
    for(let person of arr){
@@ -52,7 +54,7 @@ const sortUsersByOrder = (...arr) => {
   }
   return newArr
 };
-
+/** FEEDBACK: You should create a copy first, remember that when you have ellipsis in the parameter, it will make it a rest parameter! */
 const sortUsersByName = (...arr) => {
   for(let person of arr){
     person.sort((a,b) => {
