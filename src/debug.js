@@ -4,7 +4,7 @@ const myEvery = (arr, callback) => {
   }
   return true;
 };
-/** FEEDBACK: This test is not passing because you are affecting the original array or objects. What do you need to do before the sort to make a copy of the array?  */
+/** FEEDBACK: Great job!  */
 const sortUsersBy = ([...users], sortingFunction) => {
   const newUsers = users.sort(sortingFunction);
   return newUsers

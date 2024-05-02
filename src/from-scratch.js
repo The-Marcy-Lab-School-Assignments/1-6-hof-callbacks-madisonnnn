@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job getting all test cases to pass! */
 const myForEach = (arr,func) => {
   for(let i=0;i<arr.length;i++){
     func(arr[i])
@@ -44,13 +45,11 @@ const sortNumbersBetter = ([...arr], isDescending) => {
   }
   return arr.sort((a,b) => a-b)
 };
-/** FEEDBACK: For this one, you should create a copy of arr rather than using the rest parameter in the parameter!
- * After making a copy, you can sort directly on the copy!
- */
+
 const sortUsersByOrder = ([...arr]) => {
   return arr.sort((a,b) => a.order - b.order)
 };
-/** FEEDBACK: You should create a copy first, remember that when you have ellipsis in the parameter, it will make it a rest parameter! */
+
 const sortUsersByName = ([...arr]) => {
   return arr.sort((a,b) => {
     if (a.name < b.name) {
